@@ -48,7 +48,7 @@ class Bot extends Client {
             this.logger.sucess("[WS] Connected to discord");
         } catch (error) {
             this.logger.error(`[WS] Connection error: ${e}`);
-        }
+        }                     
         await mongo();
         this.commands = new CommandsManager(this);
         let slash = await resolve(__dirname, "..", "commands")

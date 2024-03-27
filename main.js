@@ -37,7 +37,7 @@ class Bot extends Client {
         })
 
     }
-    async launch() {
+    async launch() {         
         this.baseApi.checkClient(this)
         console.log("[Launching] Bot is launching...");
         await this.events.loadEvent();
